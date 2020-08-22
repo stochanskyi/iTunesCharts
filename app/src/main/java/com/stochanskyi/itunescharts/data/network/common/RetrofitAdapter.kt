@@ -19,7 +19,7 @@ class RetrofitAdapter {
 
     private val iTunesClient = createRetrofitClient(ITUNES_URL)
 
-    val chartsApiService = chartsClient.create(ChartsApi::class.java)
+    val chartsApiService: ChartsApi = chartsClient.create(ChartsApi::class.java)
 
 
     private fun createRetrofitClient(url: String) = Retrofit.Builder()
