@@ -1,4 +1,4 @@
-package com.stochanskyi.itunesloader
+package com.stochanskyi.itunesloader.utils
 
 import io.reactivex.*
 import io.reactivex.android.schedulers.AndroidSchedulers
