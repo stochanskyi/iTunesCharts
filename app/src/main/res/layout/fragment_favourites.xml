@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/contentFrame"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView android:id="@+id/favouritesRecycler"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:id="@+id/audiobooksLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout"
+                android:layout_margin="5dp">
+                <TextView
+                    android:id="@+id/audiobooksText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="25sp"
+                    android:textColor="?attr/textColor"
+                    android:text="No favourite audiobooks"
+                    android:layout_margin="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/audiobooksRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/moviesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/audiobooksLayout"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout"
+                android:layout_margin="5dp">
+
+
+            <TextView
+                    android:id="@+id/moviesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:textSize="25sp"
+                    android:textColor="?attr/textColor"
+                    android:text="No favourite movies"
+
+                    android:layout_margin="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/moviesRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/podcastsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/moviesLayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout"
+                android:layout_margin="5dp">
+
+
+            <TextView
+                android:id="@+id/podcastsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:textSize="25sp"
+                android:textColor="?attr/textColor"
+                android:text="No favourite podcasts"
+
+                android:layout_margin="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/podcastsRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>
