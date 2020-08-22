@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.stochanskyi.itunescharts.R;
-import com.stochanskyi.itunescharts.data.network.features.movies.models.MovieModel;
+import com.stochanskyi.itunescharts.data.network.featuresOld.movies.models.MovieModel;
 import com.stochanskyi.itunescharts.presentation.base.BaseFragment;
 import com.stochanskyi.itunescharts.presentation.fragments.adapters.artwork.ArtworksAdapter;
 import com.stochanskyi.itunescharts.presentation.fragments.adapters.artwork.holders.StarButtonListener;

@@ -1,6 +1,6 @@
 package com.stochanskyi.itunescharts.presentation.fragments.audiobooks.presentation;
 
-import com.stochanskyi.itunescharts.data.network.features.audiobooks.models.AudiobookModel;
+import com.stochanskyi.itunescharts.data.network.featuresOld.audiobooks.models.AudiobookModel;
 import com.stochanskyi.itunescharts.presentation.base.MVP.IBaseView;
 
 import java.util.ArrayList;

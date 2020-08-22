@@ -13,9 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.stochanskyi.itunescharts.R;
-import com.stochanskyi.itunescharts.data.network.features.audiobooks.models.AudiobookModel;
-import com.stochanskyi.itunescharts.data.network.features.movies.models.MovieModel;
-import com.stochanskyi.itunescharts.data.network.features.podcasts.models.PodcastModel;
+import com.stochanskyi.itunescharts.data.network.featuresOld.audiobooks.models.AudiobookModel;
+import com.stochanskyi.itunescharts.data.network.featuresOld.movies.models.MovieModel;
+import com.stochanskyi.itunescharts.data.network.featuresOld.podcasts.models.PodcastModel;
 import com.stochanskyi.itunescharts.presentation.base.BaseFragment;
 import com.stochanskyi.itunescharts.presentation.fragments.adapters.artwork.ArtworksAdapter;
 import com.stochanskyi.itunescharts.presentation.fragments.adapters.artwork.holders.StarButtonListener;

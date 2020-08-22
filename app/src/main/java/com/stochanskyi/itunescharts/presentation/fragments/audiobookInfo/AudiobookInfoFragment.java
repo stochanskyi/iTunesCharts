@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.stochanskyi.itunescharts.R;
-import com.stochanskyi.itunescharts.data.network.features.info.audiobookInfo.models.AudiobookInfoModel;
+import com.stochanskyi.itunescharts.data.network.featuresOld.info.audiobookInfo.models.AudiobookInfoModel;
 import com.stochanskyi.itunescharts.presentation.base.BaseFragment;
 import com.stochanskyi.itunescharts.presentation.fragments.audiobookInfo.presentation.AudiobookInfoPresenter;
 import com.stochanskyi.itunescharts.presentation.fragments.audiobookInfo.presentation.IAudiobookInfoView;

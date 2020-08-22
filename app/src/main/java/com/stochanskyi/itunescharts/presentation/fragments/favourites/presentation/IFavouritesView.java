@@ -1,8 +1,8 @@
 package com.stochanskyi.itunescharts.presentation.fragments.favourites.presentation;
 
-import com.stochanskyi.itunescharts.data.network.features.audiobooks.models.AudiobookModel;
-import com.stochanskyi.itunescharts.data.network.features.movies.models.MovieModel;
-import com.stochanskyi.itunescharts.data.network.features.podcasts.models.PodcastModel;
+import com.stochanskyi.itunescharts.data.network.featuresOld.audiobooks.models.AudiobookModel;
+import com.stochanskyi.itunescharts.data.network.featuresOld.movies.models.MovieModel;
+import com.stochanskyi.itunescharts.data.network.featuresOld.podcasts.models.PodcastModel;
 import com.stochanskyi.itunescharts.presentation.base.MVP.IBaseView;
 
 import java.util.ArrayList;

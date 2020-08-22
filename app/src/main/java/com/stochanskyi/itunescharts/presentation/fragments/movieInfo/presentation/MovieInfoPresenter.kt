@@ -1,7 +1,7 @@
 package com.stochanskyi.itunescharts.presentation.fragments.movieInfo.presentation
 
-import com.stochanskyi.itunescharts.data.network.features.info.movieInfo.MovieInfoProvider
-import com.stochanskyi.itunescharts.data.network.features.info.movieInfo.models.MovieInfoModel
+import com.stochanskyi.itunescharts.data.network.featuresOld.info.movieInfo.MovieInfoProvider
+import com.stochanskyi.itunescharts.data.network.featuresOld.info.movieInfo.models.MovieInfoModel
 import com.stochanskyi.itunescharts.presentation.base.MVP.BasePresenter
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable

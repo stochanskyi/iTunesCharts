@@ -1,9 +1,9 @@
 package com.stochanskyi.itunescharts.presentation.fragments.audiobooks.presentation
 
 import com.stochanskyi.itunescharts.data.DB.DBClient
-import com.stochanskyi.itunescharts.data.network.features.audiobooks.AudiobooksProvider
-import com.stochanskyi.itunescharts.data.network.features.audiobooks.models.AudiobookModel
-import com.stochanskyi.itunescharts.data.network.features.audiobooks.models.AudiobooksCollection
+import com.stochanskyi.itunescharts.data.network.featuresOld.audiobooks.AudiobooksProvider
+import com.stochanskyi.itunescharts.data.network.featuresOld.audiobooks.models.AudiobookModel
+import com.stochanskyi.itunescharts.data.network.featuresOld.audiobooks.models.AudiobooksCollection
 import com.stochanskyi.itunescharts.presentation.base.MVP.BasePresenter
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable

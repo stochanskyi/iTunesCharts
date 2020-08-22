@@ -1,6 +1,6 @@
 package com.stochanskyi.itunescharts.presentation.fragments.movies.presentation;
 
-import com.stochanskyi.itunescharts.data.network.features.movies.models.MovieModel;
+import com.stochanskyi.itunescharts.data.network.featuresOld.movies.models.MovieModel;
 import com.stochanskyi.itunescharts.presentation.base.MVP.IBaseView;
 
 import java.util.ArrayList;
