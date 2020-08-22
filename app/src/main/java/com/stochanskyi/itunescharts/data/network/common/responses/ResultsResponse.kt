@@ -7,6 +7,6 @@ data class ResultsResponse<T>(
     val title: String,
     @SerializedName("id")
     val id: String,
-    @SerializedName("result")
+    @SerializedName("results")
     val data: T
 )

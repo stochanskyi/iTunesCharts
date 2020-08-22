@@ -1,6 +1,5 @@
 package com.stochanskyi.itunescharts.data.network.common
 
-import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import com.stochanskyi.itunescharts.data.network.features.charts.ChartsApi
 import okhttp3.Interceptor
