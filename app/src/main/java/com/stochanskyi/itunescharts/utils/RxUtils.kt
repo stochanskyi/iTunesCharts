@@ -65,26 +65,6 @@ fun Completable.onUiThread(): Completable = this
         .subscribeOn(AndroidSchedulers.mainThread())
         .observeOn(AndroidSchedulers.mainThread())
 
-fun <T> Observable<T>.apiSchedulers(): Observable<T> = this
-        .subscribeOn(Schedulers.io())
-        .observeOn(AndroidSchedulers.mainThread())
-
-fun <T> Single<T>.apiSchedulers(): Single<T> = this
-        .subscribeOn(Schedulers.io())
-        .observeOn(AndroidSchedulers.mainThread())
-
-fun <T> Maybe<T>.apiSchedulers(): Maybe<T> = this
-        .subscribeOn(Schedulers.io())
-        .observeOn(AndroidSchedulers.mainThread())
-
-fun <T> Flowable<T>.apiSchedulers(): Flowable<T> = this
-        .subscribeOn(Schedulers.io())
-        .observeOn(AndroidSchedulers.mainThread())
-
-fun Completable.apiSchedulers(): Completable = this
-        .subscribeOn(Schedulers.io())
-        .observeOn(AndroidSchedulers.mainThread())
-
 fun <T> Observable<T>.observeOnUI(): Observable<T> = this
         .observeOn(AndroidSchedulers.mainThread())
 
