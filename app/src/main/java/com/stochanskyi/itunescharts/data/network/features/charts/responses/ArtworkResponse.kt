@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 data class ArtworkResponse(
     @SerializedName("id")
     val id: String,
-    @SerializedName("artist_name")
+    @SerializedName("artistName")
     val artistName: String,
     @SerializedName("name")
     val name: String,
