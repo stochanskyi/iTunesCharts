@@ -1,4 +1,4 @@
-package com.stochanskyi.itunescharts.presentation.base.models;
+package com.stochanskyi.itunescharts.presentation.baseOld.models;
 
 public interface IArtworkModel {
     String getName();

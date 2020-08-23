@@ -16,8 +16,8 @@ import com.stochanskyi.itunescharts.presentation.activities.mainActivity.navigat
 import com.stochanskyi.itunescharts.presentation.activities.mainActivity.navigation.Screen;
 import com.stochanskyi.itunescharts.presentation.activities.mainActivity.presentation.IMainActivityView;
 import com.stochanskyi.itunescharts.presentation.activities.mainActivity.presentation.MainActivityPresenter;
-import com.stochanskyi.itunescharts.presentation.base.BaseActivity;
-import com.stochanskyi.itunescharts.presentation.base.BaseFragment;
+import com.stochanskyi.itunescharts.presentation.baseOld.BaseActivity;
+import com.stochanskyi.itunescharts.presentation.baseOld.BaseFragment;
 import com.stochanskyi.itunescharts.presentation.fragments.audiobooks.AudiobooksFragment;
 import com.stochanskyi.itunescharts.presentation.fragments.favourites.FavouritesFragment;
 import com.stochanskyi.itunescharts.presentation.fragments.movies.MoviesFragment;

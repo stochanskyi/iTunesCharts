@@ -1,12 +1,12 @@
-package com.stochanskyi.itunescharts.presentation.base;
+package com.stochanskyi.itunescharts.presentation.baseOld;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.stochanskyi.itunescharts.presentation.base.MVP.BasePresenter;
-import com.stochanskyi.itunescharts.presentation.base.MVP.IBaseView;
+import com.stochanskyi.itunescharts.presentation.baseOld.MVP.BasePresenter;
+import com.stochanskyi.itunescharts.presentation.baseOld.MVP.IBaseView;
 
 public abstract class BaseActivity<P extends BasePresenter<V>, V extends IBaseView> extends AppCompatActivity
         implements IBaseView {

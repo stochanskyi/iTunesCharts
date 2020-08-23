@@ -1,4 +1,4 @@
-package com.stochanskyi.itunescharts.presentation.base.MVP;
+package com.stochanskyi.itunescharts.presentation.baseOld.MVP;
 
 public abstract class BasePresenter<V extends IBaseView> implements IBasePresenter<V> {
     protected V view;

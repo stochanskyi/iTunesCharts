@@ -4,7 +4,7 @@ import com.stochanskyi.itunescharts.data.DB.DBClient
 import com.stochanskyi.itunescharts.data.network.featuresOld.movies.MoviesProvider
 import com.stochanskyi.itunescharts.data.network.featuresOld.movies.models.MovieModel
 import com.stochanskyi.itunescharts.data.network.featuresOld.movies.models.MoviesCollection
-import com.stochanskyi.itunescharts.presentation.base.MVP.BasePresenter
+import com.stochanskyi.itunescharts.presentation.baseOld.MVP.BasePresenter
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.rxkotlin.subscribeBy

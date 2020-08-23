@@ -4,7 +4,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import com.google.gson.annotations.SerializedName;
-import com.stochanskyi.itunescharts.presentation.base.models.IArtworkModel;
+import com.stochanskyi.itunescharts.presentation.baseOld.models.IArtworkModel;
 
 @Entity(tableName = "Movies")
 public class MovieModel implements IArtworkModel {

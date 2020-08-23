@@ -1,4 +1,4 @@
-package com.stochanskyi.itunescharts.presentation.base;
+package com.stochanskyi.itunescharts.presentation.baseOld;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,8 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.stochanskyi.itunescharts.presentation.base.MVP.BasePresenter;
-import com.stochanskyi.itunescharts.presentation.base.MVP.IBaseView;
+import com.stochanskyi.itunescharts.presentation.baseOld.MVP.BasePresenter;
+import com.stochanskyi.itunescharts.presentation.baseOld.MVP.IBaseView;
 
 public abstract class BaseFragment<P extends BasePresenter<V>, V extends IBaseView> extends Fragment
         implements IBaseView {

@@ -1,4 +1,4 @@
-package com.stochanskyi.itunescharts.presentation.base.MVP;
+package com.stochanskyi.itunescharts.presentation.baseOld.MVP;
 
 import android.view.View;
 

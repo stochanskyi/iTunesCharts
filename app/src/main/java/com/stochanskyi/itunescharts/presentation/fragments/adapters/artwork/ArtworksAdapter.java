@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.stochanskyi.itunescharts.R;
-import com.stochanskyi.itunescharts.presentation.base.models.IArtworkModel;
+import com.stochanskyi.itunescharts.presentation.baseOld.models.IArtworkModel;
 import com.stochanskyi.itunescharts.presentation.fragments.adapters.artwork.holders.ArtworkViewHolder;
 import com.stochanskyi.itunescharts.presentation.fragments.adapters.artwork.holders.OnItemClickedListener;
 import com.stochanskyi.itunescharts.presentation.fragments.adapters.artwork.holders.StarButtonListener;

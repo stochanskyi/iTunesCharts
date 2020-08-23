@@ -4,7 +4,7 @@ import com.stochanskyi.itunescharts.data.DB.DBClient;
 import com.stochanskyi.itunescharts.data.network.featuresOld.audiobooks.models.AudiobookModel;
 import com.stochanskyi.itunescharts.data.network.featuresOld.movies.models.MovieModel;
 import com.stochanskyi.itunescharts.data.network.featuresOld.podcasts.models.PodcastModel;
-import com.stochanskyi.itunescharts.presentation.base.MVP.BasePresenter;
+import com.stochanskyi.itunescharts.presentation.baseOld.MVP.BasePresenter;
 
 import java.util.ArrayList;
 

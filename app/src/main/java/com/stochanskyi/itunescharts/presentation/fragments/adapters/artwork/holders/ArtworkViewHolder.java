@@ -12,7 +12,7 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.like.LikeButton;
 import com.like.OnLikeListener;
 import com.stochanskyi.itunescharts.R;
-import com.stochanskyi.itunescharts.presentation.base.models.IArtworkModel;
+import com.stochanskyi.itunescharts.presentation.baseOld.models.IArtworkModel;
 
 public class ArtworkViewHolder<M extends IArtworkModel> extends RecyclerView.ViewHolder {
     private TextView artistName;

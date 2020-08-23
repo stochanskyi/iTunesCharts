@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 import com.bumptech.glide.Glide;
 import com.stochanskyi.itunescharts.R;
 import com.stochanskyi.itunescharts.data.network.featuresOld.info.movieInfo.models.MovieInfoModel;
-import com.stochanskyi.itunescharts.presentation.base.BaseFragment;
+import com.stochanskyi.itunescharts.presentation.baseOld.BaseFragment;
 import com.stochanskyi.itunescharts.presentation.fragments.movieInfo.presentation.IMovieInfoView;
 import com.stochanskyi.itunescharts.presentation.fragments.movieInfo.presentation.MovieInfoPresenter;
 

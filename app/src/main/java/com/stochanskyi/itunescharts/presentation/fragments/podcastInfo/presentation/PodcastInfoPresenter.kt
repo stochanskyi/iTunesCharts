@@ -2,7 +2,7 @@ package com.stochanskyi.itunescharts.presentation.fragments.podcastInfo.presenta
 
 import com.stochanskyi.itunescharts.data.network.featuresOld.info.podcastInfo.PodcastInfoProvider
 import com.stochanskyi.itunescharts.data.network.featuresOld.info.podcastInfo.models.PodcastInfoModel
-import com.stochanskyi.itunescharts.presentation.base.MVP.BasePresenter
+import com.stochanskyi.itunescharts.presentation.baseOld.MVP.BasePresenter
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.rxkotlin.subscribeBy
