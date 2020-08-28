@@ -1,6 +1,6 @@
 package com.stochanskyi.itunescharts.presentation.fragments.favourites.presentation;
 
-import com.stochanskyi.itunescharts.data.DB.DBClient;
+import com.stochanskyi.itunescharts.data.DBOld.DBClient;
 import com.stochanskyi.itunescharts.data.network.featuresOld.audiobooks.models.AudiobookModel;
 import com.stochanskyi.itunescharts.data.network.featuresOld.movies.models.MovieModel;
 import com.stochanskyi.itunescharts.data.network.featuresOld.podcasts.models.PodcastModel;

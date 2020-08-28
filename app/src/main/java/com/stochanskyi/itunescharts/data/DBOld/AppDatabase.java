@@ -1,4 +1,4 @@
-package com.stochanskyi.itunescharts.data.DB;
+package com.stochanskyi.itunescharts.data.DBOld;
 
 import androidx.room.Database;
 import androidx.room.RoomDatabase;

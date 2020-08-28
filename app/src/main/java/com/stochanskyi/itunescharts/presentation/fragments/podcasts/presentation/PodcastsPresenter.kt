@@ -1,6 +1,6 @@
 package com.stochanskyi.itunescharts.presentation.fragments.podcasts.presentation
 
-import com.stochanskyi.itunescharts.data.DB.DBClient
+import com.stochanskyi.itunescharts.data.DBOld.DBClient
 import com.stochanskyi.itunescharts.data.network.featuresOld.podcasts.PodcastsProvider
 import com.stochanskyi.itunescharts.data.network.featuresOld.podcasts.models.PodcastModel
 import com.stochanskyi.itunescharts.data.network.featuresOld.podcasts.models.PodcastsCollection

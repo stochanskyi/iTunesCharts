@@ -1,4 +1,4 @@
-package com.stochanskyi.itunescharts.data.DB;
+package com.stochanskyi.itunescharts.data.DBOld;
 
 import androidx.room.Dao;
 import androidx.room.Delete;

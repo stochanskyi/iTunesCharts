@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.stochanskyi.itunescharts.R;
-import com.stochanskyi.itunescharts.data.DB.DBClient;
+import com.stochanskyi.itunescharts.data.DBOld.DBClient;
 import com.stochanskyi.itunescharts.presentation.activities.mainActivity.navigation.CustomBackStack;
 import com.stochanskyi.itunescharts.presentation.activities.mainActivity.navigation.Screen;
 import com.stochanskyi.itunescharts.presentation.activities.mainActivity.presentation.IMainActivityView;

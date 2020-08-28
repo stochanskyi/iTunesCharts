@@ -1,6 +1,6 @@
 package com.stochanskyi.itunescharts.presentation.fragments.movies.presentation
 
-import com.stochanskyi.itunescharts.data.DB.DBClient
+import com.stochanskyi.itunescharts.data.DBOld.DBClient
 import com.stochanskyi.itunescharts.data.network.featuresOld.movies.MoviesProvider
 import com.stochanskyi.itunescharts.data.network.featuresOld.movies.models.MovieModel
 import com.stochanskyi.itunescharts.data.network.featuresOld.movies.models.MoviesCollection
