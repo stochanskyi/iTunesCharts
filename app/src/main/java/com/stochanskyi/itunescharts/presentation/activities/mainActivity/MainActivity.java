@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -19,6 +20,8 @@ import com.stochanskyi.itunescharts.presentation.activities.mainActivity.present
 import com.stochanskyi.itunescharts.presentation.baseOld.BaseActivity;
 import com.stochanskyi.itunescharts.presentation.baseOld.BaseFragment;
 import com.stochanskyi.itunescharts.presentation.fragments.audiobooks.AudiobooksFragment;
+import com.stochanskyi.itunescharts.presentation.fragments.charts.impl.ChartsFragment;
+import com.stochanskyi.itunescharts.presentation.fragments.charts.impl.presenter.PresenterType;
 import com.stochanskyi.itunescharts.presentation.fragments.favourites.FavouritesFragment;
 import com.stochanskyi.itunescharts.presentation.fragments.movies.MoviesFragment;
 import com.stochanskyi.itunescharts.presentation.fragments.podcasts.PodcastsFragment;
@@ -34,9 +37,9 @@ public class MainActivity extends BaseActivity<MainActivityPresenter, IMainActiv
     BottomNavigationView navigationView;
     ActionBar actionBar;
     CustomBackStack backStack;
-    AudiobooksFragment audiobooksFragment = null;
-    MoviesFragment moviesFragment = null;
-    PodcastsFragment podcastsFragment = null;
+    ChartsFragment audiobooksFragment = null;
+    ChartsFragment moviesFragment = null;
+    ChartsFragment podcastsFragment = null;
     FavouritesFragment favouritesFragment = null;
 
     @Override
@@ -52,9 +55,9 @@ public class MainActivity extends BaseActivity<MainActivityPresenter, IMainActiv
             initPages();
             this.toAudiobooks(true);
         } else {
-            audiobooksFragment = (AudiobooksFragment) getSupportFragmentManager().findFragmentByTag(AUDIOBOOKS_FRAGMENT_KEY);
-            moviesFragment = (MoviesFragment) getSupportFragmentManager().findFragmentByTag(MOVIES_FRAGMENT_KEY);
-            podcastsFragment = (PodcastsFragment) getSupportFragmentManager().findFragmentByTag(PODCASTS_FRAGMENT_KEY);
+            audiobooksFragment = (ChartsFragment) getSupportFragmentManager().findFragmentByTag(AUDIOBOOKS_FRAGMENT_KEY);
+            moviesFragment = (ChartsFragment) getSupportFragmentManager().findFragmentByTag(MOVIES_FRAGMENT_KEY);
+            podcastsFragment = (ChartsFragment) getSupportFragmentManager().findFragmentByTag(PODCASTS_FRAGMENT_KEY);
             favouritesFragment = (FavouritesFragment) getSupportFragmentManager().findFragmentByTag(FAVOURITES_FRAGMENT_KEY);
             backStack = savedInstanceState.getParcelable(BACKSTACK_KEY);
         }
@@ -69,14 +72,9 @@ public class MainActivity extends BaseActivity<MainActivityPresenter, IMainActiv
         super.onSaveInstanceState(outState);
     }
 
-
-
-
-
-
     @Override
     public void onBackPressed() {
-        BaseFragment infoFragment = (BaseFragment) fromScreen(backStack.getLastScreen()).getChildFragmentManager().findFragmentByTag("Info fragment");
+        Fragment infoFragment = fromScreen(backStack.getLastScreen()).getChildFragmentManager().findFragmentByTag("Info fragment");
         if (infoFragment != null) {
             fromScreen(backStack.getLastScreen()).getChildFragmentManager().beginTransaction().remove(infoFragment).commit();
             return;
@@ -116,9 +114,9 @@ public class MainActivity extends BaseActivity<MainActivityPresenter, IMainActiv
     }
 
     private void initPages() {
-        audiobooksFragment = AudiobooksFragment.newInstance();
-        moviesFragment = MoviesFragment.newInstance();
-        podcastsFragment = PodcastsFragment.newInstance();
+        audiobooksFragment = ChartsFragment.Companion.newInstance(PresenterType.AUDIOBOOKS);
+        moviesFragment = ChartsFragment.Companion.newInstance(PresenterType.MOVIES);
+        podcastsFragment = ChartsFragment.Companion.newInstance(PresenterType.PODCASTS);
         favouritesFragment = FavouritesFragment.newInstance();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
@@ -229,7 +227,7 @@ public class MainActivity extends BaseActivity<MainActivityPresenter, IMainActiv
 
     }
 
-    private BaseFragment fromScreen(Screen screen) {
+    private Fragment fromScreen(Screen screen) {
         switch (screen) {
             case AUDIO_BOOKS:
                 return audiobooksFragment;

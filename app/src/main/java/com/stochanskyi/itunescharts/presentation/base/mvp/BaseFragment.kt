@@ -19,8 +19,6 @@ abstract class BaseFragment<T : IBasePresenter<out IBaseFragment> > :
 
     abstract fun initPresenter()
 
-    override fun initViews() {}
-
     override fun close() {
         parentFragment?.let {
             if (it.childFragmentManager.backStackEntryCount > 0) {
