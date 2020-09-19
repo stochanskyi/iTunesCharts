@@ -17,6 +17,8 @@ fun <T> SingleFeed<T>.validateFeedResponse(): Single<T> = this.map { it.feed.dat
 
 fun <T> SingleResults<T>.validateResultsResponse(): Single<T> = this.map { it.data }
 
+fun <T> SingleResultsList<T>.validateItemInfoResponse(): Single<T> = this.map { it.data.first() }
+
 
 fun <T> Observable<T>.apiSchedulers(): Observable<T> = this
     .subscribeOn(Schedulers.io())
